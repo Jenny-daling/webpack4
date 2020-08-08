@@ -1,0 +1,28 @@
+{
+  "name": "webpack4",
+  "version": "1.0.0",
+  "description": "初次练习webpack 使用的是18年的版本 并且配置的是局部变量",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "dev": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jenny-daling/webpack4.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jenny-daling/webpack4/issues"
+  },
+  "homepage": "https://github.com/Jenny-daling/webpack4#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^4.3.0",
+    "webpack": "^4.16.4",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
