@@ -64,7 +64,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "1c12d0d12e7f20de58cb";
+/******/ 	var hotCurrentHash = "ee837c542fd85c0ac8c0";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -782,7 +782,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
+/******/ 	__webpack_require__.p = "http://127.0.0.1:8080";
 /******/
 /******/ 	// __webpack_hash__
 /******/ 	__webpack_require__.h = function() { return hotCurrentHash; };
@@ -799,9 +799,10 @@
   !*** ./src/index2.js ***!
   \***********************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-eval("let odiv2=document.getElementById('div2');\r\nodiv2.innerHTML='Hello World index2';\n\n//# sourceURL=webpack:///./src/index2.js?");
+"use strict";
+eval("\n\nvar odiv2 = document.getElementById('div2');\nodiv2.innerHTML = 'Hello World index2';\n\n//# sourceURL=webpack:///./src/index2.js?");
 
 /***/ })
 

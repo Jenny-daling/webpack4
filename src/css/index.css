@@ -1,0 +1,6 @@
+#div1{
+    width:100px;
+    height:100px;
+    background: url('../img/pdf.jpg') no-repeat;
+    transform:rotate(30deg);
+}

@@ -64,7 +64,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "1c12d0d12e7f20de58cb";
+/******/ 	var hotCurrentHash = "ee837c542fd85c0ac8c0";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -782,7 +782,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
+/******/ 	__webpack_require__.p = "http://127.0.0.1:8080";
 /******/
 /******/ 	// __webpack_hash__
 /******/ 	__webpack_require__.h = function() { return hotCurrentHash; };
@@ -794,14 +794,37 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/css/index.css":
+/*!***************************!*\
+  !*** ./src/css/index.css ***!
+  \***************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./src/css/index.css?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nvar _index = __webpack_require__(/*! ./css/index.css */ \"./src/css/index.css\");\n\nvar _index2 = _interopRequireDefault(_index);\n\nvar _index3 = __webpack_require__(/*! ./style/index.scss */ \"./src/style/index.scss\");\n\nvar _index4 = _interopRequireDefault(_index3);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar odiv1 = document.getElementById('div1');\nodiv1.innerHTML = 'Hello World index1';\nvar sum = function sum(x, y) {\n  return x + y;\n};\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/style/index.scss":
+/*!******************************!*\
+  !*** ./src/style/index.scss ***!
+  \******************************/
+/*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("let odiv1=document.getElementById('div1');\r\nodiv1.innerHTML='Hello World index1';\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./src/style/index.scss?");
 
 /***/ })
 
