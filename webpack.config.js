@@ -4,6 +4,7 @@ const HtmlWebpackPlugin=require('html-webpack-plugin');
 const ExtractTextWebpackPlugin=require('extract-text-webpack-plugin');
 const PurifyCSSPlugin=require('purifycss-webpack');
 const glob=require('glob');
+const CopyWebpackPlugin=require('copy-webpack-plugin');
 
 module.exports={
     mode:'development',     //开发环境 production生产环境
@@ -92,7 +93,15 @@ module.exports={
             paths:glob.sync(path.join(__dirname,'src/*.html')),
         }),
         // 注释打包
-        new webpack.BannerPlugin('注释打包')
+        new webpack.BannerPlugin('注释打包'),
+        // 不需要导入jquery库就可以直接使用jquery 用即打包
+        new webpack.ProvidePlugin({
+            $:'jquery'
+        }),
+        new CopyWebpackPlugin([{
+            from:__dirname+'/src/public',
+            to:'./public'
+        }])
     ],
     devServer:{
         contentBase:path.resolve(__dirname,'./dist'),
